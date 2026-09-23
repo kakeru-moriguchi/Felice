@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import Link from 'next/link';import {getPosts} from '@/lib/blog';
+export const metadata:Metadata={title:'ブログ',description:'美容サロンFeliceからのお知らせやサロンの日々をお届けします。'};
+export default async function Page(){const posts=await getPosts();return <><div className="page-hero container"><p className="eyebrow">JOURNAL</p><h1>ブログ</h1><p>サロンのこと、美容のこと。Feliceからのお便りです。</p></div><section className="section container"><div className="post-list">{posts.map(p=><Link href={`/blog/${p.slug}`} key={p.id} className="post-row"><time>{p.publishedAt.slice(0,10).replaceAll('-','.')}</time><span>{p.category}</span><strong>{p.title}</strong><b>→</b></Link>)}</div></section></>}

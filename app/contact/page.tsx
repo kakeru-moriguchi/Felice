@@ -1,0 +1,3 @@
+import type {Metadata} from 'next';import {ContactForm} from '@/components/ContactForm';import {site} from '@/lib/site';
+export const metadata:Metadata={title:'お問い合わせ',description:'美容サロンFeliceへのお問い合わせはこちら。施術やご予約についてお気軽にご相談ください。'};
+export default function Page(){return <><div className="page-hero container"><p className="eyebrow">CONTACT</p><h1>お問い合わせ</h1><p>施術についてのご質問やご相談をお送りください。</p></div><section className="section container contact-grid"><div><h2>お気軽にご相談ください。</h2><p>内容を確認のうえ、店舗よりご連絡いたします。ご予約はホットペッパービューティー、気軽なご相談は公式LINEもご利用いただけます。</p><div className="contact-other"><a href={site.hotpepper} target="_blank" rel="noopener noreferrer">Hot Pepperで予約 ↗</a><a href={site.line} target="_blank" rel="noopener noreferrer">LINEで相談 ↗</a></div></div><ContactForm/></section></>}
