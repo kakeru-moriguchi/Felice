@@ -7,6 +7,7 @@ export const site = {
   instagram: 'https://www.instagram.com/felice.kato0401/',
   map: 'https://www.google.com/maps/search/?api=1&query=%E6%9D%B1%E4%BA%AC%E9%83%BD%E8%B1%8A%E5%B3%B6%E5%8C%BA%E5%8C%97%E5%A4%A7%E5%A1%9A2-12-3',
 } as const;
-export const images = { hero: '/images/hero.webp', room: '/images/room.jpg', treatment: '/images/treatment.jpg', therapist: '/images/therapist.jpg', exterior: '/images/exterior.jpg', menu: '/images/menu.jpg' } as const;
+export const images = { hero: '/images/top.jpg', room: '/images/room.jpg', treatment: '/images/annsin.jpg', therapist: '/images/therapist.jpg', exterior: '/images/basyo.jpg', menu: '/images/menu.jpg' } as const;
 export const menu = ['脱毛','フェイシャル','毛穴洗浄','よもぎ蒸し','整体','オイル（ハンド・フット）'];
+
 
