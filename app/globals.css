@@ -5,7 +5,13 @@
 @media(max-width:560px){h2{font-size:28px}.hero-image{height:67vw;min-height:250px}.hero-copy>p:not(.hero-kicker){font-size:13px}.hero-links{align-items:stretch;flex-direction:column;gap:18px}.hero-links .button{width:100%}.hero-links .text-link{align-self:flex-start}.reason-one .reason-photo,.reason-three .reason-photo{height:250px}.menu-layout>.photo{height:auto;aspect-ratio:1400/1110}.therapist-grid .photo,.shop-grid .photo{height:310px}.menu-list strong{font-size:20px}.post-row{grid-template-columns:80px 1fr 16px;gap:10px;padding:19px 0}.post-row span{display:none}.post-row strong{font-size:13px}.blog-head{align-items:flex-end}.footer-main{grid-template-columns:1fr;gap:24px}.footer-links{grid-column:1}.footer-bottom span{display:none}.profile-grid>.photo,.shop-page-grid>.photo{height:350px}.article-heading{padding-top:45px}.radio-row{gap:12px}.contact-form{gap:23px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
 .photo{background-size:cover;background-position:center}
+
+/* Keep the full salon collage visible in the Trust section. */
+.reason-one{min-height:0}
+.reason-one .reason-photo{height:auto;aspect-ratio:1402/1122}
+.reason-one .reason-photo .photo{height:100%;background-size:contain;background-color:#f1ebe2}
 .hero-copy{width:100%;padding-right:25px}.hero-copy>p:not(.hero-kicker){max-width:390px}.hero-links{flex-wrap:wrap}
+
 
 
 
